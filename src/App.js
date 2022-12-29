@@ -1,9 +1,9 @@
-import CatalogItem from "./components/directory/directory";
+import Directory from './components/directory/directory';
 
 const App = () => {
 	return (
 		<div>
-			<CatalogItem />
+			<Directory />
 		</div>
 	);
 };

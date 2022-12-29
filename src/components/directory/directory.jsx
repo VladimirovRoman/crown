@@ -1,7 +1,8 @@
 import CategoryItem from "../category-item/category-item";
 
 import './directory.styles.scss'
-const CatalogItem = () => {
+const Directory = () => {
+
 	const categories = [
 		{
 			id: 1,
@@ -39,4 +40,5 @@ const CatalogItem = () => {
 	);
 };
 
-export default CatalogItem;
+export default Directory;
+	
