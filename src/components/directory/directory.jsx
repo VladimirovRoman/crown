@@ -1,8 +1,8 @@
-import CategoryItem from "../category-item/Category-item";
+import CategoryItem from '../category-item/Category-item';
 
-import './directory.styles.scss'
+import './directory.styles.scss';
+
 const Directory = () => {
-
 	const categories = [
 		{
 			id: 1,
@@ -41,4 +41,3 @@ const Directory = () => {
 };
 
 export default Directory;
-	
