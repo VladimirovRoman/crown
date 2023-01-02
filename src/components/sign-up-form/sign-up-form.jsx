@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import Button from '../button/button.component';
-import FormInput from '../form-input/form-input';
+import Button from '../button/Button';
+import FormInput from '../form-input/Form-input';
 import {
 	createAuthUserWithEmailAndPassword,
 	createUserDocumentFromAuth,

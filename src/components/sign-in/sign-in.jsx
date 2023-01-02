@@ -3,7 +3,7 @@ import {
 	createUserDocumentFromAuth,
 } from '../../utils/firebase/firebase';
 
-import SignUp from '../sign-up-form/sign-up-form';
+import SignUp from '../sign-up-form/Sign-up-form';
 
 const SignIn = () => {
 	const logGoogleUser = async () => {
