@@ -37,8 +37,19 @@ const SignIn = () => {
 				password
 			);
 			console.log(response);
-			resetFormFields(); 
-		} catch (error) {}
+			resetFormFields();
+		} catch (error) {
+			switch (error.code) {
+				case 'auth/wrong-password':
+					alert('Incorrect password for email');
+					break;
+				case 'auth/user-not-found':
+					alert('no user associated with this email');
+					break;
+				default:
+					console.error(error);
+			}
+		}
 	};
 
 	const handleChange = (event) => {
@@ -70,10 +81,8 @@ const SignIn = () => {
 					value={password}
 				/>
 				<div className='buttons-container'>
-					<Button buttonType='inverted' type='submit'>
-						Sing in
-					</Button>
-					<Button buttonType='google' onClick={signInWithGoogle}>
+					<Button type='submit'>Sing in</Button>
+					<Button type='button' buttonType='google' onClick={signInWithGoogle}>
 						Google sing in
 					</Button>
 				</div>
