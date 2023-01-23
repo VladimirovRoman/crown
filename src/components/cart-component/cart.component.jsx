@@ -6,6 +6,7 @@ import CartItem from '../cart-item/cart-item.component';
 const CartComponent = () => {
 	const { cartItems } = useContext(CartContext);
 
+	
 	return (
 		<div>
 			{cartItems.map((item) => (
